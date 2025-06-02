@@ -1,11 +1,12 @@
 # lib/debug.py
-import ipdb
+import lib
 from lib.db.connection import get_connection, close_connection, create_tables
 from lib.db.seed import seed_data
 from lib.models.author import Author
 from lib.models.magazine import Magazine
 from lib.models.article import Article
 import os
+import ipdb
 
 def setup_db_for_debug():
     # Remove existing database file if it exists, for a clean slate
